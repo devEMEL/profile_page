@@ -1,0 +1,253 @@
+:root {
+
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;    
+  
+    --color-primary-1: #563d7c;
+    --color-primary-2: #533b77;
+    --color-primary-3: #503972;
+  
+    --color-secondary-1: #1a07e6;
+    --color-secondary-2: #1a08db;
+    --color-secondary-3: #1a09d0;
+  
+    --color-tertiary-1: #7500ff;
+    --color-tertiary-2: rgb(182, 32, 32);
+  
+  
+  
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+  
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+}
+  
+body {
+    font-family: 'Quicksand'sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-grey-dark-1);
+    background: #fff;
+    overflow-x: hidden;
+}
+
+h2 {
+
+    font-size: 3rem;
+    background: linear-gradient(to left, var(--color-tertiary-1),var(--color-tertiary-2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 2rem 0 0 0;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.user-section {
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgb(156, 96, 96);
+
+    display: flex;
+}
+
+.user-photo {
+    height: 15rem;
+    width: 14rem;
+    border-radius: .5rem;
+    border: 2px solid var(--color-tertiary-2);
+
+    
+}
+
+.user-section .user {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+
+    flex: 0 0 60%;
+    text-align: center;
+}
+
+.user-section .user h2 {
+    
+    transform: skew(-15deg);
+    
+}
+
+.user-section .user h3 {
+    font-size: 2rem;
+    background: linear-gradient(to left, var(--color-tertiary-1),var(--color-tertiary-2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+
+
+.user-section .user .skills {
+
+    margin-top: 2rem;
+    color: rgb(167, 63, 63);
+}
+
+.user-section .user .skills span {
+    border-right: 2px solid var(--color-tertiary-2);
+    padding: 0 1rem;
+}
+
+.user-section .user .skills span:last-child {
+    border-right: none;
+
+}
+
+.info-section h2,
+.form-section h2 {
+    margin-bottom: 2rem;
+}
+
+.info-section div {
+    margin-bottom: 2rem;
+}
+
+.info-section>div>h3,
+label {
+    background: linear-gradient(to left, var(--color-tertiary-1),var(--color-tertiary-2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+ 
+}
+
+
+.info-section>div .span {
+    color: black;
+    font-size: 1.7rem;
+    border: 1px solid var(--color-tertiary-2);
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+}
+
+#slack-id-name {
+    text-transform: none;
+}
+
+#bio {
+    padding: 2rem 3rem;
+}
+
+form {
+    width: 100%;
+    padding: 2rem 4rem;
+}
+
+label{
+    display: block;
+}
+
+input{
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 10rem;
+    border: 1px solid var(--color-tertiary-2);
+    font-family: inherit;
+    font-size: 1.7rem;
+    color: #000;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea {
+
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    border: 1px solid var(--color-tertiary-2);
+    font-family: inherit;
+    font-size: 1.7rem;
+    color: #000;
+    height: 150px;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+  
+button {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--color-tertiary-2);
+    font-family: inherit;
+    font-size: 1.7rem;
+    color: #000;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--color-tertiary-2);
+    transition: background-color .2s;
+    
+}
+
+button:focus{
+    outline: none;
+}
+
+button:hover {
+    background-color: rgb(235, 25, 25);
+}
+
+footer {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.7rem;
+
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 95%;
+        margin: auto;
+
+    }
+
+    .for-img{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .user-section {
+        margin-top: 3rem;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid rgb(156, 96, 96);
+    
+        display: flex;
+        flex-direction: column;
+    }
+}
